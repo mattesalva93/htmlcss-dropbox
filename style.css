@@ -136,7 +136,7 @@ main{
 }
 .col{
     border: 1px solid black;
-    min-height: 150vh;
+    min-height: 125vh;
     width: 30%;
     float: left;
 }
@@ -170,8 +170,8 @@ main{
 }
 .coltext div#button{
     text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 3vh;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
 }
 .coltext #button a{
     text-decoration: none;
