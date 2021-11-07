@@ -6,7 +6,6 @@
 body{
     font-family: 'roboto', sans-serif;
     font-size: 20px;
-    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -16,15 +15,16 @@ a:visited{
     color: inherit;
 }
 
-                                             /*header*/
+                                            /*header*/
 
-nav{                                      /*nav*/
+nav{                                        /*nav*/
     background-color: white;
     position:fixed;
     top: 0;
     left: 0;
     min-height: 8vh;
     width: 100%;
+    z-index: 999;
 }
 .navbox::after{
     content: "";
@@ -65,7 +65,7 @@ nav ul li{
     color:white;
 }
 
-                                                /*titolone*/
+                                            /*titolone*/
 #titolone{
     min-height: 85vh;
     margin-top: 8vh;
@@ -80,38 +80,91 @@ nav ul li{
 #titolone h1{
     font-size: 5.5vw;
 }
-.colsx{
+.jumbosx{
     float: left;
     width: 40%;
     margin-top: 5vh;
 }
-.colsx p{
-    width: 60%;
+.jumbosx p{
+    width: 75%;
 }
-.colsx span#button{
+.jumbosx span#button{
     margin-top: 4vh;
     display: inline-block;
     margin-bottom: 1vh;
 }
-.colsx p:nth-last-of-type(1){
-    width: 60%;
+.jumbosx p:nth-last-of-type(1){
     font-size: 18px;
 }
-.colsx i[class^="fas"]{
+.jumbosx i[class^="fas"]{
     font-size: 2.5vw;
     margin-top: 4vh;
 }
-.coldx{
+.jumbodx{
     float:left;
     width: 60%;
     margin-top: 5vh;
     position: relative;
+
 }
-.coldx img{
-    object-fit: contain;
-    width: 60vw;
+.jumbodx img{
+    width: 50vw;
     height: auto;
     position: absolute;
     top: 0;
     right: 1vw;
+}                                             
+                                            /*main*/
+main{                                       
+    min-height: 300vh;
+    padding: 10vw 15vw;
+}
+.mainhead h2{                               /*mainhead*/
+    font-size: 3vw;
+    margin-bottom: 5vh;
+}
+#pianificazione:nth-child(4){
+    margin-left: 1vw;
+}
+.colonne{                                    /*colonne*/
+    margin: 4vh auto;
+}
+.col::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col{
+    border: 1px solid black;
+    min-height: 150vh;
+    width: 31%;
+    float: left;
+}
+.col.cx{
+    margin: auto 3%;
+}
+.col .colhead{
+    text-align: center;
+    line-height: 6vh;
+    vertical-align: middle;
+    border-bottom: 1px solid black ;
+}
+.coltext{
+    padding: 3vh 0 0 2vw;
+}
+.coltext h3{
+    font-size: 1.5vw;
+}
+.coltext h4{
+    margin: 2vh 0 1vh 0;
+}
+.coltext span:nth-child(3){
+    color: grey;
+    font-size: 18px;
+}
+.coltext p:nth-of-type(1){
+    margin-top: 4vh;
+}
+.coltext p{
+    margin-bottom: 2vh;
 }
