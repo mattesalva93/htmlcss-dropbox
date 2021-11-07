@@ -5,8 +5,8 @@
 }
 body{
     font-family: 'roboto', sans-serif;
-    overflow: hidden;
     font-size: 20px;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -72,6 +72,11 @@ nav ul li{
     background-color: #B4D0E7;
     padding: 8vh 15vh;
 }
+#titolone{
+    content: "";
+    display: table;
+    clear: both;
+}
 #titolone h1{
     font-size: 5.5vw;
 }
@@ -95,4 +100,18 @@ nav ul li{
 .colsx i[class^="fas"]{
     font-size: 2.5vw;
     margin-top: 4vh;
+}
+.coldx{
+    float:left;
+    width: 60%;
+    margin-top: 5vh;
+    position: relative;
+}
+.coldx img{
+    object-fit: contain;
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 1vw;
 }
