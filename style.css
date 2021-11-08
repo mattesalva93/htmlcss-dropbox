@@ -7,6 +7,15 @@ body{
     font-family: 'roboto', sans-serif;
     font-size: 1vw;
 }
+h1{
+    font-size: 5.5vw;
+}
+h2{
+    font-size: 3vw;
+}
+h3{
+    font-size: 1.5vw;
+}
 
                                             /*header*/
 
@@ -82,9 +91,6 @@ nav li:hover{
     display: table;
     clear: both;
 }
-#titolone h1{
-    font-size: 5.5vw;
-}
 .jumbosx{
     float: left;
     width: 40%;
@@ -123,12 +129,9 @@ nav li:hover{
 main{                                       
     padding: 10vw 15vw;
 }
-.corpo{
-    min-height: 200vh;
-}
+
 .mainhead h2{                               /*mainhead*/
-    font-size: 3vw;
-    margin-bottom: 5vh;
+     margin-bottom: 5vh;
 }
 #pianificazione:nth-child(4){
     margin-left: 1vw;
@@ -143,7 +146,7 @@ main{
 }
 .col{
     border: 1px solid black;
-    min-height: 125vh;
+    height: 125vh;
     width: 30%;
     float: left;
 }
@@ -158,9 +161,6 @@ main{
 }
 .coltext{
     padding: 3vh 1.5vw 0 1.5vw;
-}
-.coltext h3{
-    font-size: 1.5vw;
 }
 .coltext h4{
     margin: 2vh 0 1vh 0;
@@ -206,38 +206,58 @@ main{
 }
 .colfooter .coltext a{
     float: right;
-}                                           /*fine colonne*/
+}                                           
 
-.soci{                                      /*Section partner*/
-    min-height: 50vh;
-    width: 100%;
-    margin: 0 auto 7vh auto;
-}
+                                      /*Section partner*/
+
 .partner::after{
     content: "";
     display: table;
     clear: both;
 }
-.partner{
+.partnerphoto, .partnertext{
     float: left;
     width: 50%;
-    height: 100%;
 }
-.partner img{
-    width: 100%;
-    height: auto;
+.partnerphoto img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .partnertext{
     padding: 3vw 4vw; 
 }
-.partnertext h3{
-    font-size: 1.5vw;
-}
+
 .partnertext p{
     margin: 4vh auto;
 }
 .partnertext #button{
     background-color: white ;
     border: 1px solid black;
-    color: black;
+    color: black;                           
+}                                               
+
+                                        /*Section functionsEse*/
+.functions{ 
+    margin: 10vh auto;
+}
+.funcitionlist::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.feature{
+    width: 30%;
+    float: left;
+    margin-top: 8vh;
+}
+.feature:nth-of-type(3n+2){
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.feature img{
+    max-width: 100%;
+    max-height: 50%;
+}
+.feature p{
+    margin-top: 3vh;
 }
