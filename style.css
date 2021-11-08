@@ -244,9 +244,8 @@ main{
 
                                         /*Section functionsEse*/
 .functions{ 
-    margin: 10vh auto;
+    margin: 10vh auto 0 auto;
     width: 80%;
-    margin: 0 auto;
 }
 .functions::after{
     content: "";
@@ -272,9 +271,8 @@ main{
 
                                             /*Section functionspam*/
 .functionspam{
-    margin-top: 25vh;
     width: 80%;
-    margin: 0 auto;
+    margin: 25vh auto 10vh auto;
 }
 .functionspam h2{
     width: 59%;
@@ -283,7 +281,6 @@ main{
                                             /*Sponsor*/
 #sponsor{
     height: 60vh;
-    margin-top: 10vh;
 }
 #sponsor::after{
     content: "";
@@ -308,10 +305,19 @@ main{
     height: 50%;
     width: 50%;
     float: left;
+    position: relative;
+}
+.sponsor.sx img, .sponsor.dx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    filter: invert(1);
 }
 .sponsor.cx{
     background-color: #F5F5F5;
-    padding: 2vh 3vw;
+    padding: 5vh 5vw;
     height: 100%;
 }
 .sponsor.sx div:nth-child(1){
@@ -339,4 +345,14 @@ main{
 .sponsor.dx div:nth-child(4){
     background-color: #FFD830;
 }
-
+.deslogo{
+    width: 30%;
+}
+.sponsor.cx hr{
+    width: 10%;
+    margin: 7vh 0;
+    background-color:grey;
+}
+.sponsor.cx p:nth-child(4){
+    margin-top: 7vh;
+}
