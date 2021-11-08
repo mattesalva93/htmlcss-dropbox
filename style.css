@@ -59,11 +59,16 @@ nav ul li{
     line-height: 8vh;
     margin: 0 20px;
 }
+nav li:hover{
+    text-decoration: underline;
+}
 #button{
     background-color: rgb(0,97,255);
     padding: 10px 25px;
     color:white;
+    text-decoration: none;
 }
+
 
                                             /*titolone*/
 #titolone{
@@ -88,7 +93,7 @@ nav ul li{
 .jumbosx p{
     width: 75%;
 }
-.jumbosx span#button{
+.jumbosx a#button{
     margin-top: 4vh;
     display: inline-block;
     margin-bottom: 1vh;
@@ -116,8 +121,10 @@ nav ul li{
 }                                             
                                             /*main*/
 main{                                       
-    min-height: 300vh;
     padding: 10vw 15vw;
+}
+.corpo{
+    min-height: 200vh;
 }
 .mainhead h2{                               /*mainhead*/
     font-size: 3vw;
@@ -143,7 +150,7 @@ main{
 .col.cx{
     margin: auto 5%;
 }
-.col .colhead{
+.colhead{
     text-align: center;
     line-height: 6vh;
     vertical-align: middle;
@@ -168,13 +175,10 @@ main{
 .coltext p{
     margin-bottom: 2vh;
 }
-.coltext div#button{
+.coltext div{
     text-align: center;
     margin-top: 6vh;
     margin-bottom: 5vh;
-}
-.coltext #button a{
-    text-decoration: none;
 }
 .coltext #button a:visited{
     text-decoration: none;
@@ -189,4 +193,51 @@ main{
 }
 .coltext ul li{
     margin: 4vh 0;
+}
+.colfooter{
+    height: 30vh;
+    width: 100%;
+    margin: 7vh auto;
+    border: 1px solid black;
+    float: left;
+}
+.colfooter h3{
+    display: inline-block;
+}
+.colfooter .coltext a{
+    float: right;
+}                                           /*fine colonne*/
+
+.soci{                                      /*Section partner*/
+    min-height: 50vh;
+    width: 100%;
+    margin: 0 auto 7vh auto;
+}
+.partner::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.partner{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.partner img{
+    width: 100%;
+    height: auto;
+}
+.partnertext{
+    padding: 3vw 4vw; 
+}
+.partnertext h3{
+    font-size: 1.5vw;
+}
+.partnertext p{
+    margin: 4vh auto;
+}
+.partnertext #button{
+    background-color: white ;
+    border: 1px solid black;
+    color: black;
 }
