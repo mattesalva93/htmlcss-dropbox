@@ -81,7 +81,7 @@ nav li:hover{
 
                                             /*titolone*/
 #titolone{
-    min-height: 85vh;
+    height: 85vh;
     margin-top: 8vh;
     background-color: #B4D0E7;
     padding: 8vh 15vh;
@@ -226,7 +226,6 @@ main{
 .partnertext{
     padding: 3vw 4vw; 
 }
-
 .partnertext p{
     margin: 4vh auto;
 }
@@ -240,7 +239,7 @@ main{
 .functions{ 
     margin: 10vh auto;
 }
-.funcitionlist::after{
+.functions::after{
     content: "";
     display: table;
     clear: both;
@@ -260,4 +259,13 @@ main{
 }
 .feature p{
     margin-top: 3vh;
+}
+
+                                            /*Section functionspam*/
+.functionspam{
+    margin-top: 25vh;
+}
+.functionspam h2{
+    width: 59%;
+    margin-bottom: 5vh;
 }
