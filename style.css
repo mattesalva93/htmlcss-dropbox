@@ -355,4 +355,56 @@ main{
 }
 .sponsor.cx p:nth-child(4){
     margin-top: 7vh;
+}                                                /*businesstrial*/
+
+.businesstrial{
+    background-color: #B4D0E7;
+    height: 40vh;
+    padding: 6% 0;
+}
+.businesstrial h2{
+    color: #61082B;
+    width: 50%;
+    display: inline-block;
+    margin-left: 10%;
+}
+.businesstrial #button{
+    background-color: #ffffff;
+    color: black;
+}
+.businesstrial > div{
+    float: right;
+    margin-right: 10%;
+}                                                   /*FAQ*/
+
+.faq{
+    width: 80%;
+    margin: 15vh auto;
+}
+.faq > div{
+    height: 40vh;
+    margin-top: 5vh ;
+}
+.faq  div.domanda{
+    border-top: 1px solid grey ;
+    line-height: 10vh;
+}
+.faq div.domanda:nth-child(4){
+    border-bottom: 1px solid grey;
+}
+.faq h4{
+    display: inline-block;
+
+}
+.faq i{
+    text-align: right;
+    float: right;
+    line-height: 10vh;
+}
+.domanda p{
+    display: none;
+}
+.domanda:hover p{
+    display: inline-block;
+    line-height: 1;
 }
