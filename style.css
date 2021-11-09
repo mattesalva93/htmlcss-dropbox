@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    font-family: 'roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1vw;
 }
 h1{
@@ -19,6 +19,9 @@ h3{
 a{
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
                                             /*header*/
 
@@ -30,6 +33,7 @@ nav{                                        /*nav*/
     min-height: 8vh;
     width: 100%;
     z-index: 999;
+    font-size: 20px;
 }
 .navbox::after{
     content: "";
@@ -90,7 +94,7 @@ nav li:not(.nodec):hover{
     min-height: 85vh;
     margin-top: 8vh;
     background-color: #B4D0E7;
-    padding: 8vh 7vw;
+    padding: 8vh 5vw;
 }
 #titolone{
     content: "";
@@ -326,6 +330,7 @@ main{
     width: 40%;
     float:left;
 }
+
 .sponsor::after{
     content: "";
     display: table;
@@ -342,7 +347,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 125px;
     filter: invert(1);
 }
 .sponsor.cx{
@@ -352,7 +357,6 @@ main{
 }
 .sponsor.sx div:nth-child(1){
     background-color: #A2D39B;
-    border: 10px solid #D0E9CD;
 }
 .sponsor.sx div:nth-child(2){
     background-color: #61082B;
@@ -374,6 +378,9 @@ main{
 }
 .sponsor.dx div:nth-child(4){
     background-color: #FFD830;
+}
+.sponsor.sx div:hover, .sponsor.dx div:hover{
+    border: 10px solid rgba(245,245,245, 0.5);
 }
 .deslogo{
     width: 30%;
