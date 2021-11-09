@@ -16,6 +16,9 @@ h2{
 h3{
     font-size: 1.5vw;
 }
+a{
+    text-decoration: none;
+}
 
                                             /*header*/
 
@@ -68,16 +71,19 @@ nav ul li{
     line-height: 8vh;
     margin: 0 20px;
 }
-nav li:hover{
+nav li:not(.nodec):hover{
     text-decoration: underline;
 }
+
 #button{
     background-color: rgb(0,97,255);
     padding: 10px 25px;
     color:white;
-    text-decoration: none;
 }
-
+#button:hover{
+    background-color: rgba(0,97,255, 0.8);
+   
+}
 
                                             /*titolone*/
 #titolone{
@@ -90,6 +96,9 @@ nav li:hover{
     content: "";
     display: table;
     clear: both;
+}
+.jumbosx div a{
+    text-decoration: none;
 }
 .jumbosx{
     float: left;
@@ -198,7 +207,6 @@ main{
     padding-top: 3px;
     margin-right: 3px;
 }
-
 .coltext #button a:visited{
     text-decoration: none;
     color:inherit;
@@ -259,14 +267,17 @@ main{
     background-color: white ;
     border: 1px solid black;
     color: black;                           
+}
+.partnertext #button:hover{
+    border: 2px solid #0061FF;
 }                                               
 
-                                        /*Section functionsEse*/
-.functions{ 
+                                        /*Section functions*/
+#functions{ 
     margin: 10vh auto 0 auto;
     width: 80%;
 }
-.functions::after{
+#functions::after{
     content: "";
     display: table;
     clear: both;
@@ -391,6 +402,9 @@ main{
     background-color: #ffffff;
     color: black;
 }
+.businesstrial #button:hover{
+    background-color: rgba(245,245,245, 0.8);
+}
 .businesstrial > div{
     float: right;
     margin-right: 10%;
@@ -415,6 +429,15 @@ main{
 .faq h4{
     display: inline-block;
 
+}
+.faq > div i:nth-child(3){
+    display: none;
+}
+.domanda:hover .hidden{
+    display: inline-block;
+}
+.domanda:hover .shown{
+    display: none;
 }
 .faq i{
     text-align: right;
@@ -457,6 +480,9 @@ footer{
 .footcol a{
     text-decoration: none;
 }
+.footcol a:hover{
+    text-decoration: underline;
+} 
 .footcol a:visited{
     text-decoration: none;
     color: inherit;
