@@ -198,7 +198,7 @@ main{
     margin-bottom: 5vh;
 }
 .coltext #button{
-    padding: 10px 4.5vw;
+    padding: 10px 4vw;
 }
 .align::after{
     content: "";
