@@ -312,89 +312,142 @@ main{
     width: 59%;
     margin-bottom: 5vh;
 }
-                                            /*Sponsor*/
-#sponsor{
-    height: 60vh;
-}
-#sponsor::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.sponsor.sx, .sponsor.dx{
-    width: 30%;
-    float: left;
-    height: 60vh;
-}
-.sponsor.cx{
-    width: 40%;
-    float:left;
-}
 
-.sponsor::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.sponsor.sx div, .sponsor.dx div{
-    height: 50%;
-    width: 50%;
-    float: left;
+#sponsor{                                   /*sponsor*/
+    height: 60vh;
     position: relative;
+    background-color: #F5F5F5;
 }
-.sponsor.sx img, .sponsor.dx img{
+.sponsor.sx, .sponsor.rx{
+    position: absolute;
+    width: 15%;
+    height: 50%;
+}
+.sponsor.text{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+}
+div.sponsor.sx:nth-of-type(1){
+    top:0;
+    left: 0;
+    background-color: #A2D39B;
+}
+div.sponsor.sx:nth-of-type(2){
+    top:0;
+    left: 15%;
+    background-color: #61082B;
+}
+div.sponsor.sx:nth-of-type(3){
+    top:50%;
+    left: 0;
+    background-color: #0093CE;
+}
+div.sponsor.sx:nth-of-type(4){
+    top:50%;
+    left: 15%;
+    background-color: #FF1C1C;
+}
+.sponsor.text{
+    top: 0;
+    left: 30%;
+    background-color: #F5F5F5;
+}
+div.sponsor.rx:nth-of-type(5){
+    top:0;
+    right: 15%;
+    background-color: #D5001F;
+}
+div.sponsor.rx:nth-of-type(6){
+    top:0;
+    right: 0;
+    background-color: #B4D0E7;
+}
+div.sponsor.rx:nth-of-type(7){
+    top:50%;
+    right: 15%;
+    background-color: #0D2481;
+}
+div.sponsor.rx:nth-of-type(8){
+    top:50%;
+    right: 0;
+    background-color: #FFD830;
+}
+.sponsor.sx:hover, .sponsor.rx:hover{
+    border: 10px solid rgba(245,245,245, 0.5);
+}
+.sponsor.sx img, .sponsor.rx img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 125px;
+    width: 130px;
     filter: invert(1);
 }
-.sponsor.cx{
-    background-color: #F5F5F5;
+.sponsor.text{
     padding: 5vh 5vw;
-    height: 100%;
 }
-.sponsor.sx div:nth-child(1){
-    background-color: #A2D39B;
-}
-.sponsor.sx div:nth-child(2){
-    background-color: #61082B;
-}
-.sponsor.sx div:nth-child(3){
-    background-color: #0093CE;
-}
-.sponsor.sx div:nth-child(4){
-    background-color: #FF1C1C;
-}
-.sponsor.dx div:nth-child(1){
-    background-color: #D5001F;
-}
-.sponsor.dx div:nth-child(2){
-    background-color: #B4D0E7;
-}
-.sponsor.dx div:nth-child(3){
-    background-color: #0D2481;
-}
-.sponsor.dx div:nth-child(4){
-    background-color: #FFD830;
-}
-.sponsor.sx div:hover, .sponsor.dx div:hover{
-    border: 10px solid rgba(245,245,245, 0.5);
-}
-.deslogo{
+.brandlogo{
     width: 30%;
 }
-.sponsor.cx hr{
+.sponsor.text hr{
     width: 10%;
     margin: 7vh 0;
     background-color:grey;
 }
-.sponsor.cx p:nth-child(4){
+.sponsor.text p:nth-child(4){
     margin-top: 7vh;
-}                                                /*businesstrial*/
+}
+.sponsor.text.first{
+    display:none;
+}
+.sponsor.text.second{
+    display:none;
+}
+.sponsor.text.third{
+    display:none;
+}
+.sponsor.text.fourth{
+    display:none;
+}
+.sponsor.text.fifth{
+    display:none;
+}
+.sponsor.text.sixth{
+    display:none;
+}
+.sponsor.text.seventh{
+    display:none;
+}
+.sponsor.text.eight{
+    display:none;
+}
+div.sponsor:nth-of-type(1):hover ~ .sponsor.text.first{
+    display: inline-block;
+}
+div.sponsor:nth-of-type(2):hover ~ .sponsor.text.second{
+    display: inline-block;
+}
+div.sponsor:nth-of-type(3):hover ~ .sponsor.text.third{
+    display: inline-block;
+}
+div.sponsor:nth-of-type(4):hover ~ .sponsor.text.fourth{
+    display: inline-block;
+}
+div.sponsor:nth-of-type(5):hover ~ .sponsor.text.fifth{
+    display: inline-block;
+}
+div.sponsor:nth-of-type(6):hover ~ .sponsor.text.sixth{
+    display: inline-block;
+}
+div.sponsor:nth-of-type(7):hover ~ .sponsor.text.seventh{
+    display: inline-block;
+}
+div.sponsor:nth-of-type(8):hover ~ .sponsor.text.eight{
+    display: inline-block;
+}
 
-.businesstrial{
+.businesstrial{                             /*businesstrial*/
     background-color: #B4D0E7;
     height: 40vh;
     padding: 6% 0;
